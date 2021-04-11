@@ -3,9 +3,9 @@ import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import preprocessing
 
-def MarvellousPredictor():
+def PlayPredictor():
 	#step 1
-	data = pd.read_csv("MarvellousInfosystems_PlayPredictor.csv")
+	data = pd.read_csv("PlayPredictor.csv")
 	print("Dataset loaded successfully with size",len(data))
 
 	#Prepare data
@@ -61,7 +61,7 @@ def main():
 
 
 
-	MarvellousPredictor()	
+	PlayPredictor()	
 
 if __name__ == '__main__':
 	main()
