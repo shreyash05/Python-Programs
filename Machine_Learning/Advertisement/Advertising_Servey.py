@@ -36,7 +36,8 @@ class AdvertisementAgency:
 			denomenator = denomenator+(self.Y[i]-self.mean_Y)**2
 
 			rsquare = numerator/denomenator
-		print("R suare value is :",rsquare) 	
+		print("R suare value is :",rsquare) 
+		return rsquare
 
 	def plot_advertisment_data(self,slope,constant):
 		xstart = np.min(self.X)
@@ -60,7 +61,7 @@ def main():
 	obj = AdvertisementAgency()
 	ret = obj.slope_of_advertisement_data()
 	ret1 = obj.constant_value_of_advertisement_data(ret)
-	obj.r_square_value_of_advertisement_data()
+	ret2 = obj.r_square_value_of_advertisement_data()
 	obj.plot_advertisment_data(ret,ret1)
 	#slope_of_advertisement_agency()
 	#constant_value_of_advertisement_Agency()
